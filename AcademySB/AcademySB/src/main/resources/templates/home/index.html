@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="/src/main/resources/static/img/css/styles.css">
+    <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
+    <meta name="autor" content="Thiago Rodrigues"/>
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .navbar-brand img {
+            position: relative;
+            right: 350px;
+        }
+    </style>
+       <style>
+        #navMobile {
+            position: relative;
+            left: 300px; 
+        }
+    </style>
+
+    <title>Projeto Escola</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .thi-section {
+            background-image: url('https://source.unsplash.com/twukN12EN7c/1920x1080');
+            background-size: cover; 
+            background-position: center; 
+            width: 1920px; 
+            height: 1080px; 
+        }
+        
+        .texto-main {
+            text-align: center;
+            padding-top: 150px;
+            color: white;
+        }
+
+        .botoes {
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        .botoes .wn {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .nav-item {
+            color: rgb(243, 243, 239); /* Define a cor do texto para amarelo */
+        }
+        .btn{
+          width: 280px;
+          color: #fff;
+          border-radius: 10px;
+          border: 3px solid #a55eea;
+          padding: 20px;
+}
+        .botoes{
+          padding: 2% 15%;
+        }
+
+    </style>
+    
+    
+</head>
+<body>
+
+
+
+  <header> 
+       
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="https://placeholder.pics/svg/150x50/888888/EEE/academy" alt="..." height="50" >
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+    <div id="navMobile" class="navbar-collapse collapse justify-content-end">
+        <a class="nav-item nav-link" href="#">Home</a>
+        <a class="nav-item nav-link" href="#">Cadastra aluno</a>
+        <a class="nav-item nav-link" href="#">Pesquisa aluno</a>
+        <a class="nav-item nav-link btn-danger" href="#">Sair</a>
+    </div>
+  </nav>
+
+</header>
+    <section class="thi-section" style="background-image: url('https://source.unsplash.com/twukN12EN7c/1920x1080');">
+
+      <div class="sombra"></div>
+
+      <div class="texto-main">
+        <h1 class="texto-centro">Gerencionamento de alunos academy</h1>
+      </div>
+
+      <div class="botoes">
+ // //// 
+      <div class="wn">
+        <button class="btn btn-primary">CADASTRA ALUNO</button>
+      </div>
+      <div class="wn">
+        <button class="btn btn-success">ENCONTRA ALUNO</button>
+      </div>
+      <div class="clear"></div>
+    </div>
+    </section>
+
+    <script src="/webjars/jquery/3.5.1/jquery.min.js"></script>
+    <script src="webjars/bootsrap/js/bootsrap.min.js"></script>
+</body>
+</html>
