@@ -7,3 +7,6 @@ a{cursor: pointer; font-weight: bold;}
     font-family: 'Ubuntu';
 }
 
+@media screen and (max-width: 667px){
+    .wm{width: 100%;}
+}

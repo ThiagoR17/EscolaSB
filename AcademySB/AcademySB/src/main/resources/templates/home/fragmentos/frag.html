@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/src/main/resources/static/img/css/styles.css">
+    <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
+    <meta name="autor" content="Thiago Rodrigues"/>
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header th:fragment="cabecalho"> 
+       
+<!---cabeçalho-->>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+            <div class="container">
+              <a class="navbar-brand">
+                <img src="https://placeholder.pics/svg/150x50/888888/EEE/academy" alt="..." height="50" >
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+    
+        <div id="navMobile" class="navbar-collapse collapse justify-content-end">
+    
+            <a class="btn-nav nav-item nav-link" href="#"><i class="fas fa-home"></i>Home</a>
+            <a class="btn-nav nav-item nav-link" href="#"><i class="fas fa-user-graduate"></i>Cadastra aluno</a>
+            <a class="btn-nav nav-item nav-link" href="#"><i class="fas fa-search"></i>Pesquisa aluno</a>
+            <a class="btn-navnav-item nav-link btn-danger" href="#"><i class="fas fa-times"></i>Sair</a>
+        </div>
+      </nav>
+    
+    </header>
+
+<!----footer-->>
+    
+    <footer th:fragment="rodape">
+      <div class="rodape">
+          <span>Todos os Direitos Reservados - 2023 &copy; Thiago Rodrigues</span>
+      </div>
+  </footer>
+
+    <script src="/webjars/jquery/3.5.1/jquery.min.js"></script>
+    <script src="webjars/bootsrap/js/bootsrap.min.js"></script>
+
+
+
+</body>
+</html>

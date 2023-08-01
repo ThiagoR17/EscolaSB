@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br"  xmlns:th="http://www.thymeleaf.org">
 <head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" href="/src/main/resources/static/img/css/styles.css">
     <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
     <meta name="autor" content="Thiago Rodrigues"/>
     <meta name ="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <style>
+     
+        .rodape{color:#fff; background-color: black; text-align: center;}
         .navbar-brand img {
             position: relative;
             right: 350px;
@@ -18,6 +22,7 @@
             position: relative;
             left: 300px; 
         }
+        
     </style>
 
     <title>Projeto Escola</title>
@@ -49,7 +54,8 @@
         }
 
         .nav-item {
-            color: rgb(243, 243, 239); /* Define a cor do texto para amarelo */
+          text-transform: uppercase;
+            color: rgb(243, 243, 239); 
         }
         .btn{
           width: 280px;
@@ -57,40 +63,55 @@
           border-radius: 10px;
           border: 3px solid #a55eea;
           padding: 20px;
-}
+        }
         .botoes{
           padding: 2% 15%;
         }
+        @media screen and (max-width: 667px){
+      .wm{width: 100%;}
+      .nav{height: 100%;}
 
+      .rodape{color:#fff; background-color: black; text-align: center;}
+ 
+      .btn-nav:hover{color: #ba68cb;}  
+      .body{
+        max-width: 1000px;
+        margin: 0 auto;
+        overflow-x: hidden;
+        
+        overflow-y: hidden;
+      }
+}
     </style>
     
     
 </head>
 <body>
 
-
-
-  <header> 
+  
        
+    <!---cabeçalho-->>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+                <div class="container">
+                  <a class="navbar-brand">
+                    <img src="https://placeholder.pics/svg/150x50/888888/EEE/academy" alt="..." height="50" >
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+        
+            <div id="navMobile" class="navbar-collapse collapse justify-content-end">
+        
+                <a class="btn-nav nav-item nav-link" href="#"><i class="fas fa-home"></i>Home</a>
+                <a class="btn-nav nav-item nav-link" href="#"><i class="fas fa-user-graduate"></i>Cadastra aluno</a>
+                <a class="btn-nav nav-item nav-link" href="#"><i class="fas fa-search"></i>Pesquisa aluno</a>
+                <a class="btn-navnav-item nav-link btn-danger" href="#"><i class="fas fa-times"></i>Sair</a>
+            </div>
+          </nav>
+        
+        </header>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="https://placeholder.pics/svg/150x50/888888/EEE/academy" alt="..." height="50" >
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-    <div id="navMobile" class="navbar-collapse collapse justify-content-end">
-        <a class="nav-item nav-link" href="#">Home</a>
-        <a class="nav-item nav-link" href="#">Cadastra aluno</a>
-        <a class="nav-item nav-link" href="#">Pesquisa aluno</a>
-        <a class="nav-item nav-link btn-danger" href="#">Sair</a>
-    </div>
-  </nav>
-
-</header>
+      
     <section class="thi-section" style="background-image: url('https://source.unsplash.com/twukN12EN7c/1920x1080');">
 
       <div class="sombra"></div>
@@ -100,7 +121,7 @@
       </div>
 
       <div class="botoes">
- // //// 
+ 
       <div class="wn">
         <button class="btn btn-primary">CADASTRA ALUNO</button>
       </div>
@@ -110,6 +131,12 @@
       <div class="clear"></div>
     </div>
     </section>
+    
+    <div class="rodape">
+      <span>Todos os Direitos Reservados - 2023 &copy; Thiago Rodrigues</span>
+  </div>
+</footer>
+
 
     <script src="/webjars/jquery/3.5.1/jquery.min.js"></script>
     <script src="webjars/bootsrap/js/bootsrap.min.js"></script>
